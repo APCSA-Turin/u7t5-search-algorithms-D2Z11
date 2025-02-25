@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class SpellChecker {
     private ArrayList<String> dictionary;
-    private int loopCounter = 0 ;
+    private static int loopCounter;
 
     public SpellChecker() {
         dictionary = new ArrayList<String>();
@@ -50,6 +50,39 @@ public class SpellChecker {
      *  prints that value out before returning.
      */
     public boolean binarySpellCheck(String word) {
+        loopCounter = 0;
+        int leftIdx = 0;   // TODO: assign this initial value
+        int rightIdx = dictionary.size() - 1;  // TODO: assign this initial value
+        if (dictionary.size() == 0) {
+            return false;
+        }
+        if (dictionary.get(0) == word) {
+            return true;
+        }
+
+        while (leftIdx < rightIdx) {  // TODO: determine this condition (hint: see slides 61-63)
+            loopCounter++; // for testing
+            int middleIdx = (rightIdx+leftIdx) / 2;  // TODO: determine what this should be
+            System.out.print(dictionary.get(middleIdx) + "\n"); // for testing
+
+            // TODO: write the rest of the code to compare middleIdx to the word
+            //  and adjust leftIdx and rightIdx as appropriate (see slides if needed)
+            if (dictionary.get(middleIdx).equals(word)) {
+                return true;
+            } else if (dictionary.get(middleIdx).compareTo(word) > 0) {
+                rightIdx = middleIdx - 1;
+            } else {
+                leftIdx = middleIdx + 1;
+            }
+            System.out.println(leftIdx + " " + rightIdx + " " + middleIdx);
+        }
+        if (leftIdx == rightIdx) {
+            // Make sure to increment loop counter because this is another check for the word
+            loopCounter++;
+            if (dictionary.get(leftIdx) == word) {
+                return true;
+            }
+        }
         return false;
     }
 

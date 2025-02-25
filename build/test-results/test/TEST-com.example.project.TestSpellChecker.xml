@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.project.TestSpellChecker" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-25T13:43:38" hostname="codespaces-dcd3f9" time="0.829">
+  <properties/>
+  <testcase name="testLinearSearchInList()" classname="com.example.project.TestSpellChecker" time="0.045"/>
+  <testcase name="testBinarySearchInList2()" classname="com.example.project.TestSpellChecker" time="0.003"/>
+  <testcase name="testBinarySearchNotInList()" classname="com.example.project.TestSpellChecker" time="0.04"/>
+  <testcase name="testLinearSearchNotInList()" classname="com.example.project.TestSpellChecker" time="0.017"/>
+  <testcase name="testBinarySearchInList()" classname="com.example.project.TestSpellChecker" time="0.014"/>
+  <system-out><![CDATA[
+dictionary.txt file imported successfully!
+-- LINEAR SEARCH: Number of words checked (loop iterations): 44357
+
+dictionary.txt file imported successfully!
+lightered
+
+dictionary.txt file imported successfully!
+lightered
+0 63570 63571
+distaining
+0 31784 31785
+careener
+15893 31784 15892
+coss
+15893 23837 23838
+clypei
+15893 19864 19865
+chegoes
+15893 17877 17878
+cementation
+15893 16884 16885
+catalpa
+16389 16884 16388
+causals
+16389 16635 16636
+catfalls
+16389 16511 16512
+catechins
+16389 16449 16450
+catbird
+16420 16449 16419
+catchers
+16435 16449 16434
+catchpenny
+16443 16449 16442
+catchwords
+16447 16449 16446
+cate
+16447 16447 16448
+
+dictionary.txt file imported successfully!
+-- LINEAR SEARCH: Number of words checked (loop iterations): 127143
+
+dictionary.txt file imported successfully!
+lightered
+0 63570 63571
+distaining
+31786 63570 31785
+gorp
+31786 47677 47678
+fairyism
+39732 47677 39731
+foundries
+43705 47677 43704
+gastight
+43705 45690 45691
+fundamentalisms
+43705 44696 44697
+frilliest
+44201 44696 44200
+fruitier
+44201 44447 44448
+fromenty
+44325 44447 44324
+froufrous
+44325 44385 44386
+frosh
+44356 44385 44355
+frosts
+44356 44369 44370
+frosted
+44356 44361 44362
+frostbite
+44356 44357 44358
+frost
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

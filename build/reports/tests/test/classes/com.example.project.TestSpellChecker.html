@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - TestBinary</title>
+<title>Test results - TestSpellChecker</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>TestBinary</h1>
+<h1>TestSpellChecker</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/com.example.project.html">com.example.project</a> &gt; TestBinary</div>
+<a href="../packages/com.example.project.html">com.example.project</a> &gt; TestSpellChecker</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">7</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.009s</div>
+<div class="counter">0.119s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,38 +78,28 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testBinarySearch_EmptyArray()</td>
-<td class="success">0.001s</td>
+<td class="success">testBinarySearchInList()</td>
+<td class="success">0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testBinarySearch_SingleElementArray_TargetFound()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testBinarySearch_SingleElementArray_TargetNotFound()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testBinarySearch_TargetAtEnd()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testBinarySearch_TargetAtStart()</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testBinarySearch_TargetFound()</td>
-<td class="success">0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testBinarySearch_TargetNotFound()</td>
+<td class="success">testBinarySearchInList2()</td>
 <td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBinarySearchNotInList()</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLinearSearchInList()</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLinearSearchNotInList()</td>
+<td class="success">0.017s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -117,15 +107,82 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>7
-4 6 3
-11
-4 4 5
-7
-4 6 3
-11
-6 6 5
-7
+<pre>
+dictionary.txt file imported successfully!
+-- LINEAR SEARCH: Number of words checked (loop iterations): 44357
+
+dictionary.txt file imported successfully!
+lightered
+
+dictionary.txt file imported successfully!
+lightered
+0 63570 63571
+distaining
+0 31784 31785
+careener
+15893 31784 15892
+coss
+15893 23837 23838
+clypei
+15893 19864 19865
+chegoes
+15893 17877 17878
+cementation
+15893 16884 16885
+catalpa
+16389 16884 16388
+causals
+16389 16635 16636
+catfalls
+16389 16511 16512
+catechins
+16389 16449 16450
+catbird
+16420 16449 16419
+catchers
+16435 16449 16434
+catchpenny
+16443 16449 16442
+catchwords
+16447 16449 16446
+cate
+16447 16447 16448
+
+dictionary.txt file imported successfully!
+-- LINEAR SEARCH: Number of words checked (loop iterations): 127143
+
+dictionary.txt file imported successfully!
+lightered
+0 63570 63571
+distaining
+31786 63570 31785
+gorp
+31786 47677 47678
+fairyism
+39732 47677 39731
+foundries
+43705 47677 43704
+gastight
+43705 45690 45691
+fundamentalisms
+43705 44696 44697
+frilliest
+44201 44696 44200
+fruitier
+44201 44447 44448
+fromenty
+44325 44447 44324
+froufrous
+44325 44385 44386
+frosh
+44356 44385 44355
+frosts
+44356 44369 44370
+frosted
+44356 44361 44362
+frostbite
+44356 44357 44358
+frost
 </pre>
 </span>
 </div>
